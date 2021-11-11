@@ -7,7 +7,7 @@ spring:
         git:
           uri: https://github.com/Java-Techie-jt/cloud-config-server
 
-server:
+server:c
   port: 9196
 
 eureka:
@@ -17,4 +17,14 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
   instance:
-    hostname: localhost    
+    hostname: localhost            
+
+mircorservice:
+  payment-service:
+    endpoints:
+      endpoint:
+        uri: http://PAYMENT-SERVICE/payment/doPayment
+  order-service:
+    endpoints:
+      endpoint:
+        uri: http://ORDER_SERVICE/order/bookOrder
