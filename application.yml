@@ -27,4 +27,4 @@ mircorservice:
   order-service:
     endpoints:
       endpoint:
-        uri: http://ORDER_SERVICE/order/bookOrder
+        uri: http://ORDER-SERVICE/order/bookOrder
